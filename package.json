@@ -1,0 +1,20 @@
+{
+  "name": "exmadew-site",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "next": "13.x",
+    "react": "18.x",
+    "react-dom": "18.x",
+    "react-tsparticles": "^2.10.0",
+    "tsparticles": "^2.10.0",
+    "tailwindcss": "^3.3.2",
+    "autoprefixer": "^10.4.13",
+    "postcss": "^8.4.21"
+  }
+}
