@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #__next {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: black;
+  color: #eee;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  filter: brightness(var(--brightness, 1));
+}
+
+body.glass-theme {
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.neon-text {
+  color: #ff073a;
+  text-shadow:
+    0 0 5px #ff073a,
+    0 0 10px #ff073a,
+    0 0 20px #ff073a,
+    0 0 40px #ff073a;
+  font-weight: 700;
+}
+
+button.neon-button {
+  background-color: transparent;
+  border: 2px solid #ff073a;
+  color: #ff073a;
+  padding: 0.5rem 1.5rem;
+  font-weight: 700;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+button.neon-button:hover {
+  background-color: #ff073a;
+  color: black;
+  box-shadow: 0 0 10px #ff073a, 0 0 20px #ff073a;
+}
+
+.glass-button {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 0.75rem;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #a0a0a0;
+  padding: 0.5rem 1.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.glass-button:hover {
+  background: rgba(255, 255, 255, 0.3);
+  color: #3abfff;
+  box-shadow: 0 0 8px #3abfff;
+}
